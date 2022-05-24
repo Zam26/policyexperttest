@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-24T12:49:28Z" name="Default suite" finished-at="2022-05-24T12:50:15Z" duration-ms="47536">
+    <groups>
+    </groups>
+    <test started-at="2022-05-24T12:49:28Z" name="Default test" finished-at="2022-05-24T12:50:15Z" duration-ms="47536">
+      <class name="com.testquote.QuoteTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@3eb77ea8]" started-at="2022-05-24T13:49:28Z" name="beforeMethod" finished-at="2022-05-24T13:49:40Z" duration-ms="12184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testFirstPageRandom()[pri:0, instance:com.testquote.QuoteTest@3eb77ea8]" started-at="2022-05-24T13:49:40Z" name="testFirstPageRandom" finished-at="2022-05-24T13:49:42Z" duration-ms="2378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstPageRandom -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@3eb77ea8]" started-at="2022-05-24T13:49:42Z" name="afterMethod" finished-at="2022-05-24T13:49:47Z" duration-ms="4425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@3eb77ea8]" started-at="2022-05-24T13:49:47Z" name="beforeMethod" finished-at="2022-05-24T13:49:53Z" duration-ms="5602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testQuote()[pri:0, instance:com.testquote.QuoteTest@3eb77ea8]" started-at="2022-05-24T13:49:53Z" name="testQuote" finished-at="2022-05-24T13:50:11Z" duration-ms="18434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuote -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@3eb77ea8]" started-at="2022-05-24T13:50:11Z" name="afterMethod" finished-at="2022-05-24T13:50:15Z" duration-ms="4451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testquote.QuoteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
