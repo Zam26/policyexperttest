@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\zam\AppData\Local\Temp\testng-eclipse-1342674123\testng-customsuite.xml</span>
+                    <span>C:\Users\zam\AppData\Local\Temp\testng-eclipse-1783312231\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testquote.QuoteTest" class="method navigator-link" hash-for-method="testExcelRead">testExcelRead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.testquote.QuoteTest" class="method navigator-link" hash-for-method="testFirstPageRandom">testFirstPageRandom</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.testquote.QuoteTest" class="method navigator-link" hash-for-method="testQuote">testQuote</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testquote.QuoteTest" class="method navigator-link" hash-for-method="testQuoteFail">testQuoteFail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,6 +140,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testExcelRead">
+                  </a> <!-- testExcelRead -->
+                  <span class="method-name">testExcelRead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testFirstPageRandom">
                   </a> <!-- testFirstPageRandom -->
                   <span class="method-name">testFirstPageRandom</span>
@@ -142,12 +159,19 @@
                   <span class="method-name">testQuote</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testQuoteFail">
+                  </a> <!-- testQuoteFail -->
+                  <span class="method-name">testQuoteFail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\zam\AppData\Local\Temp\testng-eclipse-1342674123\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\zam\AppData\Local\Temp\testng-eclipse-1783312231\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,20 +220,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testQuote')
 data.setCell(0, 2, 'com.testquote.QuoteTest')
-data.setCell(0, 3, 18434);
+data.setCell(0, 3, 28255);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testFirstPageRandom')
+data.setCell(1, 1, 'testQuoteFail')
 data.setCell(1, 2, 'com.testquote.QuoteTest')
-data.setCell(1, 3, 2378);
+data.setCell(1, 3, 3342);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testFirstPageRandom')
+data.setCell(2, 2, 'com.testquote.QuoteTest')
+data.setCell(2, 3, 2386);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testExcelRead')
+data.setCell(3, 2, 'com.testquote.QuoteTest')
+data.setCell(3, 3, 1776);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,24 +273,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testFirstPageRandom</span>
-                <span class="method-start">12184 ms</span>
+                <span class="method-name">testExcelRead</span>
+                <span class="method-start">7385 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">14566 ms</span>
+                <span class="method-start">9173 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">18993 ms</span>
+                <span class="method-start">15019 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testQuote</span>
-                <span class="method-start">24595 ms</span>
+                <span class="method-name">testFirstPageRandom</span>
+                <span class="method-start">20631 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">43031 ms</span>
+                <span class="method-start">23019 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testQuote</span>
+                <span class="method-start">34426 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">62683 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">68342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testQuoteFail</span>
+                <span class="method-start">74207 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">77551 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

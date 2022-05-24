@@ -1,4 +1,5 @@
 package com.testquote;
+import com.test.excel.Excel_Read;
 import com.test.hooks.*;
 
 import org.testng.annotations.Test;
@@ -8,13 +9,6 @@ import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-
-
-
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-//import org.testng.Assert;
-//import org.testng.annotations.*;
 
 
 public class QuoteTest extends Hooks{
@@ -45,7 +39,7 @@ public class QuoteTest extends Hooks{
 		String id = inputElem.getAttribute("aria-controls");
 
 		inputElem.sendKeys(text);
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		System.out.println("aria-controls: " + id);
 		
 		String listPath = "//ul[@id='" + id + "']/li[" + pos + "]";
@@ -62,22 +56,25 @@ public class QuoteTest extends Hooks{
 		setTextToInput(input, content);
 	}*/
 
-	public boolean testAboutYou() throws InterruptedException
+	public boolean testAboutYou(int testNo) throws InterruptedException, Exception
 	{
 	
 		System.out.println("Testing AboutYou Page");		
 		// Based on the data from XL
-		selectRadioButton("Mr");
+		Excel_Read.read(testNo);
+		
+	
+		selectRadioButton(Excel_Read.Title);
 		
 		// Fill First name and Last name
-		setTextToInput("first_name", "Zameer");
-		setTextToInput("last_name", "Shaik");
+		setTextToInput("first_name", Excel_Read.Firstname);
+		setTextToInput("last_name", Excel_Read.Lastname);
 		
 		// Fill Date of birth
-		setTextToInput("policyholder_date_of_birth.day", "15");		
+		setTextToInput("policyholder_date_of_birth.day", Excel_Read.DD);		
 		//driver.findElement(By.xpath("//input[@id='policyholder_date_of_birth.day")).sendKeys("23");		
-		setTextToInput("policyholder_date_of_birth.month", "11");
-		setTextToInput("policyholder_date_of_birth.year", "1979");
+		setTextToInput("policyholder_date_of_birth.month", Excel_Read.MM);
+		setTextToInput("policyholder_date_of_birth.year", Excel_Read.YYYY);
 		
 		// See weather the DOB validation success by checking the error info
 		// Error info only displayed when control clicks on other items.
@@ -98,20 +95,19 @@ public class QuoteTest extends Hooks{
 		}
 		
 		// Fill the Marital status.
-		selectRadioButton("Married");
+		selectRadioButton(Excel_Read.Mstatus);
 		
 		// Fill Ocupation
-		setTextToDropDown("occupation", "Soft",  "1");		
+		setTextToDropDown("occupation", Excel_Read.Occupation,  "1");		
 		
-		selectRadioButton("No");
-		selectRadioButton("Yes");
-		setTextToDropDown("occupation_part_time", "Dri",  "2");
+		selectRadioButton(Excel_Read.AnotherOCC);
+		if(Excel_Read.AnotherOCC.equals("Yes")) {
+			setTextToDropDown("occupation_part_time", Excel_Read.OCCDetail,  "1");
+		}
 
 		// Input Mobile Number.
-		setTextToInput("primary_phone_number", "07787878780");
-		setTextToInput("customer_email", "temp@test.com");
-		
-		
+		setTextToInput("primary_phone_number", Excel_Read.MainPhone);
+		setTextToInput("customer_email", Excel_Read.Email);		
 		
 		String nxt = "//button[contains(text(), 'Next')]";
 		driver.findElement(By.xpath(nxt)).click();
@@ -126,6 +122,7 @@ public class QuoteTest extends Hooks{
 	}*/
 	
 
+// Test to explore(exploratory testing) radio button selection
   @Test
   public void testFirstPageRandom() throws Exception{		
 		
@@ -138,26 +135,44 @@ public class QuoteTest extends Hooks{
 		
 		System.out.println("RANDOM TEST END");
   }
-	
-	
+
+  
+  // Test to read from XL sheet 
+  @Test
+  public void testExcelRead() throws InterruptedException, Exception {
+	  Excel_Read.read(1);
+  }
+
+  // Data driven test (Positive )
  @Test
-  public void testQuote() throws InterruptedException {
-	 	Assert.assertTrue(testAboutYou());
-	  // testSecondScreen();
+  public void testQuote() throws InterruptedException, Exception {
+	 	Assert.assertTrue(testAboutYou(1));
+	 	// testSecondScreen();
 
        }
   
-   
+
+//Data driven test (Failed case )
+ @Test
+ public void testQuoteFail() throws InterruptedException, Exception {
+	 	Assert.assertFalse(testAboutYou(2));
+	 	// testSecondScreen();
+
+      }
+ 
+ 
   @BeforeMethod
   public void beforeMethod() throws Exception {
-	  launchBrowser();	
+	  System.out.println("BEFORE METHOD");
+	  launchBrowser();
 	  // Load XL Data
   }
 
   @AfterMethod
   public void afterMethod() throws InterruptedException {
 	  // close and quit the browser
-	  driver.close();
+	  System.out.println("After METHOD");
+	  EndTest();
 	  
   }
 
