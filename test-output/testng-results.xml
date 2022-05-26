@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-24T14:49:42Z" name="Default suite" finished-at="2022-05-24T14:51:06Z" duration-ms="83357">
+  <suite started-at="2022-05-26T23:29:57Z" name="Default suite" finished-at="2022-05-26T23:31:41Z" duration-ms="104079">
     <groups>
     </groups>
-    <test started-at="2022-05-24T14:49:42Z" name="Default test" finished-at="2022-05-24T14:51:06Z" duration-ms="83357">
+    <test started-at="2022-05-26T23:29:57Z" name="Default test" finished-at="2022-05-26T23:31:41Z" duration-ms="104079">
       <class name="com.testquote.QuoteTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:49:42Z" name="beforeMethod" finished-at="2022-05-24T15:49:50Z" duration-ms="7384" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:29:57Z" name="beforeMethod" finished-at="2022-05-27T00:30:09Z" duration-ms="12188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testExcelRead()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:49:50Z" name="testExcelRead" finished-at="2022-05-24T15:49:52Z" duration-ms="1776" status="PASS">
+        <test-method signature="testExcelRead()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:09Z" name="testExcelRead" finished-at="2022-05-27T00:30:12Z" duration-ms="2613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExcelRead -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:49:52Z" name="afterMethod" finished-at="2022-05-24T15:49:57Z" duration-ms="5845" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:12Z" name="afterMethod" finished-at="2022-05-27T00:30:18Z" duration-ms="5915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:49:57Z" name="beforeMethod" finished-at="2022-05-24T15:50:03Z" duration-ms="5612" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:18Z" name="beforeMethod" finished-at="2022-05-27T00:30:26Z" duration-ms="8364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testFirstPageRandom()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:03Z" name="testFirstPageRandom" finished-at="2022-05-24T15:50:05Z" duration-ms="2386" status="PASS">
+        <test-method signature="testFirstPageRandom()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:26Z" name="testFirstPageRandom" finished-at="2022-05-27T00:30:30Z" duration-ms="3556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFirstPageRandom -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:05Z" name="afterMethod" finished-at="2022-05-24T15:50:11Z" duration-ms="5653" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:30Z" name="afterMethod" finished-at="2022-05-27T00:30:36Z" duration-ms="5857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:11Z" name="beforeMethod" finished-at="2022-05-24T15:50:17Z" duration-ms="5754" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:36Z" name="beforeMethod" finished-at="2022-05-27T00:30:43Z" duration-ms="6824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testQuote()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:17Z" name="testQuote" finished-at="2022-05-24T15:50:45Z" duration-ms="28255" status="PASS">
+        <test-method signature="testQuote()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:30:43Z" name="testQuote" finished-at="2022-05-27T00:31:17Z" duration-ms="34895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuote -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:45Z" name="afterMethod" finished-at="2022-05-24T15:50:51Z" duration-ms="5659" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:31:17Z" name="afterMethod" finished-at="2022-05-27T00:31:23Z" duration-ms="5681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:51Z" name="beforeMethod" finished-at="2022-05-24T15:50:57Z" duration-ms="5864" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:31:23Z" name="beforeMethod" finished-at="2022-05-27T00:31:32Z" duration-ms="8699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testQuoteFail()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:50:57Z" name="testQuoteFail" finished-at="2022-05-24T15:51:00Z" duration-ms="3342" status="PASS">
+        <test-method signature="testQuoteFail()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:31:32Z" name="testQuoteFail" finished-at="2022-05-27T00:31:36Z" duration-ms="3899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuoteFail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@4e423aa2]" started-at="2022-05-24T15:51:00Z" name="afterMethod" finished-at="2022-05-24T15:51:06Z" duration-ms="5752" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testquote.QuoteTest@3148f668]" started-at="2022-05-27T00:31:36Z" name="afterMethod" finished-at="2022-05-27T00:31:41Z" duration-ms="5503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

@@ -71,8 +71,7 @@ public class QuoteTest extends Hooks{
 		setTextToInput("last_name", Excel_Read.Lastname);
 		
 		// Fill Date of birth
-		setTextToInput("policyholder_date_of_birth.day", Excel_Read.DD);		
-		//driver.findElement(By.xpath("//input[@id='policyholder_date_of_birth.day")).sendKeys("23");		
+		setTextToInput("policyholder_date_of_birth.day", Excel_Read.DD);	
 		setTextToInput("policyholder_date_of_birth.month", Excel_Read.MM);
 		setTextToInput("policyholder_date_of_birth.year", Excel_Read.YYYY);
 		
